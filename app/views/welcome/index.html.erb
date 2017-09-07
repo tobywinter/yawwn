@@ -3,14 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+
+    <style>
+    p {
+      color: rgb(254,132,103);
+    }
+
+    a {
+      color: rgb(20, 8, 209)
+    }
+
+    nav {
+    }
+
+    .bg-left {
+      background-image: url("Photo06_19A copy.jpg");
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    </style>
   </head>
   <body>
 
-    <section class="hero is-info is-large">
+      <!-- <nav class="level is-desktop">
+        <p class="level-item has-text-centered">
+          <a class="link is-info" >About</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#listen">Listen</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <img src="" alt="YAWWN" style="height: 30px;">
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Live</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info">Social</a>
+        </p>
+      </nav>
+
+    </nav>
+
+    <section class="hero is-info is-small">
       <img class="img-responsive" src="yawwnart.jpeg">
+    </section>
+
+    <section>
       <iframe width="100%" height="160" src="https://clyp.it/2ley0hz3/widget" frameborder="0"></iframe>
+      <a id="listen"></a>
+    </section>
+
+
+    <section class="hero is-info is-small">
+      <img class="img-responsive" src="yawwnart.jpeg">
+    </section> -->
+
+    <header class="sans-serif">
+      <div class="cover bg-left bg-center-l" style="background-image: url(Photo06_19A copy.jpg)">
+        <div class="pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="/" class="dib w2 h2 pa1 ba b--white-90 grow-large border-box">
+                <svg class="link white-90 hover-white" data-icon="skull" viewBox="0 0 32 32" style="fill:currentcolor"><title>skull icon</title><path d="M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12"></path></svg>
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#home" >Home</a>
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#listen" >Listen</a>
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#live" >Live</a>
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#about" >About</a>
+              <!-- <a class="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba" href="/" >Sign Up</a> -->
+            </div>
+          </nav>
+
+          <div class="tc-l mt4 mt5-m mt6-l ph3">
+            <article class="mw5 mw6-ns center pt2">
+              <div class="aspect-ratio aspect-ratio--1x1 mb4">
+                <div class="aspect-ratio--object cover" style="background:url('yawwnart.jpeg') center;"></div>
+              </div>
+            </article>
+
+            <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">YAWWN</h1>
+            <h2 class="fw1 f3 white-80 mt3 mb4">---</h2>
+            <a class="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="#listen">Listen</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <div id="listen" class="">
+      <iframe width="100%" height="160" src="https://clyp.it/2ley0hz3/widget" frameborder="0"></iframe>
+    </div>
   </body>
 </html>
